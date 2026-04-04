@@ -41,4 +41,10 @@
 # カウントを減らし、攻撃が終了した場合自身を消去
     data remove storage asset:context this.Target[0]
     scoreboard players remove @s 2265.AttackCount 1
-    execute if score @s 2265.AttackCount matches ..0 run function asset:object/2265.field_modify_manager/tick/kill
+    execute if score @s 2265.AttackCount matches ..0 run return run function asset:object/2265.field_modify_manager/tick/kill
+
+# 既に色が変化した場所しかないなら色変え済みのタグ削除
+    execute unless entity @e[type=item_display,tag=CO.Object.FieldModify,tag=!2266.ColorChanged] run tag @e[type=item_display,tag=CO.Object.FieldModify] remove 2266.ColorChanged
+
+# 8箇所色を変える。一度色が変化した場所は変化しない
+    function asset:object/2265.field_modify_manager/tick/change_color

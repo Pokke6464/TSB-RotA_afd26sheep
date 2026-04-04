@@ -12,7 +12,7 @@
 
 # Progressバーの最大値を決定
     scoreboard players set @s 2265.Progress.Current 0
-    scoreboard players set @s 2265.Progress.Max 200
+    scoreboard players set @s 2265.Progress.Max 155
 
 # 攻撃対象決定
     function asset:object/2265.field_modify_manager/init/decide_color
