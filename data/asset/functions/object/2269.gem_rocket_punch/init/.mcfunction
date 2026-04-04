@@ -10,3 +10,6 @@
 # 待機時間
     scoreboard players set @s 2269.WaitTime 200
     execute if data storage asset:context this.WaitTime store result score @s 2269.WaitTime run data get storage asset:context this.WaitTime
+
+# 追撃の有無
+    execute if data storage asset:context this{IsAdditionalAttack:true} run tag @s add 2269.IsAdditionalAttack
