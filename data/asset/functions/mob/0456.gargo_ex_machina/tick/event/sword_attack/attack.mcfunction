@@ -40,5 +40,12 @@
 # 演出
     function asset:mob/0456.gargo_ex_machina/tick/event/sword_attack/attack_effect
 
-# 終了
+# DXYZ終了
     tag @a[tag=DXYZ] remove DXYZ
+
+# 衝撃波を召喚
+    execute if entity @s[tag=!CO.IsLatter] run data modify storage api: Argument set value {ID:9000, FieldOverride:{Color:11184810, Speed:1.5, SkipTick:6, Tick:67, HitBoxDelay:7}}
+    execute if entity @s[tag=CO.IsLatter] run data modify storage api: Argument set value {ID:9000, FieldOverride:{Color:2263278, Speed:1, SkipTick:7, Tick:67, HitBoxDelay:8}}
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
+    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.RingShockWave
+    execute positioned ~ ~0.2 ~ run function api:object/summon
