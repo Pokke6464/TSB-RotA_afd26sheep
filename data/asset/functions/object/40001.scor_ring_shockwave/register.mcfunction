@@ -19,5 +19,5 @@
 # フィールド(オプション)
     data modify storage asset:object Field.Color set value 16777215
     data modify storage asset:object Field.SkipTick set value 3
-    data modify storage asset:object Field.Tick set value 63
+    data modify storage asset:object Field.Tick set value 53
     data modify storage asset:object Field.HitBoxDelay set value 4

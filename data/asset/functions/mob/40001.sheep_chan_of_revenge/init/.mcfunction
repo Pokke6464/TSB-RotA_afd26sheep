@@ -6,7 +6,7 @@
     function asset:datapack/set_activation_state
 
 # 多重召喚対策
-    execute if entity @e[type=iron_golem,tag=UV5.EndInit] run return run function asset:mob/40001.sheep_chan_of_revenge/remove/
+    execute if entity @e[type=iron_golem,tag=UV5.EndInit] as @e[type=iron_golem,scores={MobID=40001}] run return run function asset:mob/40001.sheep_chan_of_revenge/remove/
 
 # 継承元の処理実行
     function asset:mob/super.init
