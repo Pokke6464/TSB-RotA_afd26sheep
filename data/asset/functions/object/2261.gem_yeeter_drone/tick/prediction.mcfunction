@@ -17,4 +17,4 @@
     scoreboard players add $PredictionTime Global 40
     # TNTのtickが60なのを考慮
     execute store result storage api: Argument.FieldOverride.Tick int 1 run scoreboard players add $PredictionTime Global 60
-    execute rotated ~ 0 positioned ~ ~0.2 ~ run function api:object/summon
+    execute rotated ~ 0 positioned ~ ~-0.4 ~ run function api:object/summon

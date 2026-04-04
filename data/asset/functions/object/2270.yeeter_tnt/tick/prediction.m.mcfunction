@@ -9,4 +9,4 @@
     data modify storage api: Argument.FieldOverride.Color set value 3381759
     data modify storage api: Argument.FieldOverride.Scale set value [24f, 24f, 0.05f]
     $data modify storage api: Argument.FieldOverride.Tick set value $(PredictionTime)
-    execute rotated ~ 0 run function api:object/summon
+    execute positioned ~ ~-0.4 ~ rotated ~ 0 run function api:object/summon
