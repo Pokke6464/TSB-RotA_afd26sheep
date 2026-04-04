@@ -41,4 +41,4 @@
     # ジャンプ
         data modify storage asset:mob Field.Damage.Jump set value 100f
     # ジャンプの衝撃波
-        data modify storage asset:mob Field.Damage.JumpShockWave set value 50f
+        data modify storage asset:mob Field.Damage.JumpShockWave set value 65f
