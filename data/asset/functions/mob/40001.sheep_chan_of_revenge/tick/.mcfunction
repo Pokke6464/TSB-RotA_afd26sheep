@@ -38,9 +38,9 @@
     execute if predicate api:global_vars/difficulty/min/3_blessless if score @s General.Mob.Tick matches 1..120 facing entity @p[gamemode=!spectator,distance=..256] feet positioned ^ ^ ^-1 rotated as @s positioned ^ ^ ^-5 facing entity @s feet positioned as @s rotated ~ 0 run tp @s ^ ^ ^0.2 ~ 0
 
 # 足音
-    execute if score @s General.Mob.Tick matches 21 run function asset:mob/40001.sheep_chan_of_revenge/tick/common/step
-    execute if score @s General.Mob.Tick matches 41 run function asset:mob/40001.sheep_chan_of_revenge/tick/common/step
-    execute if score @s General.Mob.Tick matches 61 run function asset:mob/40001.sheep_chan_of_revenge/tick/common/step
-    execute if score @s General.Mob.Tick matches 81 run function asset:mob/40001.sheep_chan_of_revenge/tick/common/step
-    execute if score @s General.Mob.Tick matches 101 run function asset:mob/40001.sheep_chan_of_revenge/tick/common/step
-    execute if score @s General.Mob.Tick matches 121 run function asset:mob/40001.sheep_chan_of_revenge/tick/common/step
+    execute if score @s General.Mob.Tick matches 21 run function asset:mob/40001.sheep_chan_of_revenge/tick/util/step
+    execute if score @s General.Mob.Tick matches 41 run function asset:mob/40001.sheep_chan_of_revenge/tick/util/step
+    execute if score @s General.Mob.Tick matches 61 run function asset:mob/40001.sheep_chan_of_revenge/tick/util/step
+    execute if score @s General.Mob.Tick matches 81 run function asset:mob/40001.sheep_chan_of_revenge/tick/util/step
+    execute if score @s General.Mob.Tick matches 101 run function asset:mob/40001.sheep_chan_of_revenge/tick/util/step
+    execute if score @s General.Mob.Tick matches 121 run function asset:mob/40001.sheep_chan_of_revenge/tick/util/step

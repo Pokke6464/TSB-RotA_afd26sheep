@@ -5,7 +5,7 @@
 # @within function asset:mob/40001.sheep_chan_of_revenge/tick/skill_active
 
 # 予告
-    function asset:mob/40001.sheep_chan_of_revenge/tick/common/laugh
+    function asset:mob/40001.sheep_chan_of_revenge/tick/util/laugh
     execute if score @s General.Mob.Tick matches 0 run function asset:mob/40001.sheep_chan_of_revenge/tick/skill/giant_wool/horizontal/prediction
 
 # 巨大羊毛攻撃

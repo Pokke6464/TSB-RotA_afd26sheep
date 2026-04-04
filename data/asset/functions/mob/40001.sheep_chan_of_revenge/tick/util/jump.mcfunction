@@ -1,4 +1,4 @@
-#> asset:mob/40001.sheep_chan_of_revenge/tick/common/jump
+#> asset:mob/40001.sheep_chan_of_revenge/tick/util/jump
 #
 # ジャンプモーション
 #

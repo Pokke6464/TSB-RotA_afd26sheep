@@ -1,4 +1,4 @@
-#> asset:mob/40001.sheep_chan_of_revenge/tick/common/laugh
+#> asset:mob/40001.sheep_chan_of_revenge/tick/util/laugh
 #
 # 予備動作の高笑い
 #
