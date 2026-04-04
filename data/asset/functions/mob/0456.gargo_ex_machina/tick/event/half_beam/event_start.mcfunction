@@ -23,9 +23,17 @@
         execute if score @s CO.EventTimer matches 21 positioned ^ ^ ^6 run particle block quartz_block ~ ~ ~ 1 0.5 1 0 100
     # 攻撃方向をランダムに決定
         execute if score @s CO.EventTimer matches 1 if predicate lib:random_pass_per/50 run tag @s add CO.Skill.HalfBeam.IsRight
-    # 予告
-        execute if entity @s[tag=CO.Skill.HalfBeam.IsRight] if score @s CO.EventTimer matches 1 run tellraw @a [{"text":"【石像の","color": "dark_purple","bold": true},{"text":" 右眼 ","color": "red","bold": true},{"text":"が光り始めた!!】","color": "dark_purple","bold": true}]
-        execute unless entity @s[tag=CO.Skill.HalfBeam.IsRight] if score @s CO.EventTimer matches 1 run tellraw @a [{"text":"【石像の","color": "dark_purple","bold": true},{"text":" 左眼 ","color": "blue","bold": true},{"text":"が光り始めた!!】","color": "dark_purple","bold": true}]
+    # 予告(色の変更理由は文字がHPのハートに重なった時に見やすいようにするため)
+        # 右の場合
+            execute if entity @s[tag=CO.Skill.HalfBeam.IsRight] if predicate api:global_vars/difficulty/max/2_hard if score @s CO.EventTimer matches 1 run tellraw @a [{"text":"【石像の","color": "light_purple","bold": true},{"text":" 右眼 ","color": "red","bold": true},{"text":"が光り始めた!!】","color": "light_purple","bold": true}]
+            execute if entity @s[tag=CO.Skill.HalfBeam.IsRight] if predicate api:global_vars/difficulty/max/2_hard if score @s CO.EventTimer matches 1 run tellraw @a [{"text":"【石像の","color": "light_purple","bold": true},{"text":" 左眼 ","color": "blue","bold": true},{"text":"は光っていない!!】","color": "light_purple","bold": true}]
+            execute if entity @s[tag=CO.Skill.HalfBeam.IsRight] if predicate api:global_vars/difficulty/min/3_blessless if score @s CO.EventTimer matches 1 run tellraw @a [{"text":"【石像の","color": "light_purple","bold": true},{"text":" 左ではない方の眼 ","color": "red","bold": true},{"text":"が光り始めた!!】","color": "light_purple","bold": true}]
+            execute if entity @s[tag=CO.Skill.HalfBeam.IsRight] if predicate api:global_vars/difficulty/min/3_blessless if score @s CO.EventTimer matches 1 run tellraw @a [{"text":"【石像の","color": "light_purple","bold": true},{"text":" 右ではない方の眼 ","color": "blue","bold": true},{"text":"は光っていない!!】","color": "light_purple","bold": true}]
+        # 左の場合
+            execute unless entity @s[tag=CO.Skill.HalfBeam.IsRight] if predicate api:global_vars/difficulty/max/2_hard if score @s CO.EventTimer matches 1 run tellraw @a [{"text":"【石像の","color": "light_purple","bold": true},{"text":" 右眼 ","color": "red","bold": true},{"text":"は光っていない!!】","color": "light_purple","bold": true}]
+            execute unless entity @s[tag=CO.Skill.HalfBeam.IsRight] if predicate api:global_vars/difficulty/max/2_hard if score @s CO.EventTimer matches 1 run tellraw @a [{"text":"【石像の","color": "light_purple","bold": true},{"text":" 左眼 ","color": "blue","bold": true},{"text":"が光り始めた!!】","color": "light_purple","bold": true}]
+            execute unless entity @s[tag=CO.Skill.HalfBeam.IsRight] if predicate api:global_vars/difficulty/min/3_blessless if score @s CO.EventTimer matches 1 run tellraw @a [{"text":"【石像の","color": "light_purple","bold": true},{"text":" 左ではない方の眼 ","color": "red","bold": true},{"text":"は光っていない!!】","color": "light_purple","bold": true}]
+            execute unless entity @s[tag=CO.Skill.HalfBeam.IsRight] if predicate api:global_vars/difficulty/min/3_blessless if score @s CO.EventTimer matches 1 run tellraw @a [{"text":"【石像の","color": "light_purple","bold": true},{"text":" 右ではない方の眼 ","color": "blue","bold": true},{"text":"が光り始めた!!】","color": "light_purple","bold": true}]
 
 # 溜めに移行
     execute if score @s CO.EventTimer matches 36.. run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam/start_charging
