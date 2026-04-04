@@ -1,0 +1,23 @@
+#> asset:object/40001.scor_ring_shockwave/register
+#
+# Objectのデータを指定
+#
+# @within function asset:object/alias/40001/register
+
+# 継承(オプション)
+    data modify storage asset:object Extends append value 8030
+    function asset:object/extends
+# 他のObjectに継承されることを許可するか (boolean) (オプション)
+    # data modify storage asset:object ExtendsSafe set value 
+# 継承されることを前提とした、抽象的なObjectであるかどうか(boolean)
+    data modify storage asset:object IsAbstract set value false
+# Tickするかどうか(boolean) (オプション)
+    # data modify storage asset:object IsTicking set value 
+
+# ID (int)
+    data modify storage asset:object ID set value 40001
+# フィールド(オプション)
+    data modify storage asset:object Field.Color set value 16777215
+    data modify storage asset:object Field.SkipTick set value 3
+    data modify storage asset:object Field.Tick set value 63
+    data modify storage asset:object Field.HitBoxDelay set value 4
