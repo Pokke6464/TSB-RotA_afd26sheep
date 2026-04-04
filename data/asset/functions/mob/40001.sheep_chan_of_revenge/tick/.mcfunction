@@ -21,6 +21,9 @@
     execute if score @s General.Mob.Tick matches -27 run playsound entity.sheep.hurt hostile @a ~ ~ ~ 2 0.7
     execute if score @s General.Mob.Tick matches -27 run particle flash ~ ~2 ~ 2 2 2 0 50
 
+# 足場生成(浮いている時のパーティクル)
+    execute if entity @s[tag=!UV5.Skill.Jump] if block ~ ~-0.2 ~ #lib:no_collision rotated ~ 0 run particle block_marker white_wool ^ ^-0.5 ^-0.5 1 0 1 0 1 force @a[distance=..64]
+
 # スキル発動
     execute if score @s[tag=!UV5.InAction] General.Mob.Tick matches 125 run function asset:mob/40001.sheep_chan_of_revenge/tick/skill_select
 
