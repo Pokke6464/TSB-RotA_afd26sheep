@@ -52,8 +52,8 @@
         execute if score @s CO.EventTimer matches 321 run function asset:mob/0456.gargo_ex_machina/tick/util/sound
         execute if score @s CO.EventTimer matches 345 run function asset:mob/0456.gargo_ex_machina/tick/util/sound
     # ボス名変更
-        execute if score @s CO.EventTimer matches 1 run function asset:mob/0456.gargo_ex_machina/tick/util/change_bossbar_name.m {Name:"絡繰仕掛の石像",Visible:"false"}
-        # execute if score @s CO.EventTimer matches 350 run function asset:mob/0456.gargo_ex_machina/tick/util/change_bossbar_name.m {Name:"絡繰仕掛の石像",Visible:"true"}
+        execute if score @s CO.EventTimer matches 1 run function asset:mob/0456.gargo_ex_machina/tick/util/change_bossbar_name.m {Name:"絡繰仕掛の§b改§f像",Visible:"false"}
+        # execute if score @s CO.EventTimer matches 350 run function asset:mob/0456.gargo_ex_machina/tick/util/change_bossbar_name.m {Name:"絡繰仕掛の§b改§f像",Visible:"true"}
         execute if score @s CO.EventTimer matches 1 run function asset:mob/0456.gargo_ex_machina/tick/event/activate/show_dummy_bossbar
         execute if score @s CO.EventTimer matches 251 run function asset:mob/0456.gargo_ex_machina/tick/event/activate/clear_dummy_bossbar
         execute if score @s CO.EventTimer matches 350 run function asset:mob/0456.gargo_ex_machina/tick/util/show_former_bossbar

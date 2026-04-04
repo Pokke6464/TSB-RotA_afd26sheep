@@ -17,7 +17,7 @@
     data modify storage asset:mob Interferable set value false
     data modify storage asset:mob IsForwardTarget set value true
 # 名前 (TextComponentString) (オプション)
-    data modify storage asset:mob Name set value '{"text":"絡繰仕掛の石像"}'
+    data modify storage asset:mob Name set value '{"translate":"絡繰仕掛の%1$s像","color":"white","with":[{"text":"改","color":"aqua"}]}'
 # Mobの説明文 (TextComponentString[]) (オプション)
     data modify storage asset:mob Lore set value ['{"text":"ここには何もないようです...","color":"white"}','{"text":"","color":"white"}','{"text":"(´・ω・`)","color":"white"}']
 # 体力 (double) (オプション)
@@ -60,5 +60,7 @@
         data modify storage asset:mob Field.Damage.YeeterDrone set value {Amount:90.0,Type:"Physical",Element:"None"}
         data modify storage asset:mob Field.Damage.PanjanDrone set value {Amount:90.0,Type:"Physical",Element:"None"}
         data modify storage asset:mob Field.Damage.PanjanDrone.Flame set value {Amount:40.0,Type:"Magic",Element:"Fire"}
+    # 円形衝撃波
+        data modify storage asset:mob Field.Damage.RingShockWave set value 65f
     # プレイヤー残機制
         data modify storage asset:mob Field.RemoveLifeWhenPlayerDie set value true

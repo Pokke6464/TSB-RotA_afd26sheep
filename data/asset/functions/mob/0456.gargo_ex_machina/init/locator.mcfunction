@@ -8,7 +8,7 @@
     execute unless entity @s[type=slime] run return 0
 
 # Locatorに以下処理を実行する
-    data merge entity @s {CustomName:'{"text":"絡繰仕掛の石像","italic":false}',Silent:1b,NoAI:1b,DeathLootTable:"minecraft:empty",PersistenceRequired :1b,Attributes:[{Name:"generic.max_health",Base:1024d}],ArmorDropChances:[0.000f,0.000f,0.000f,0.000f]}
+    data merge entity @s {CustomName:'{"translate":"絡繰仕掛の%1$s像","color":"white","with":[{"text":"改","color":"aqua"}]}',Silent:1b,NoAI:1b,DeathLootTable:"minecraft:empty",PersistenceRequired :1b,Attributes:[{Name:"generic.max_health",Base:1024d}],ArmorDropChances:[0.000f,0.000f,0.000f,0.000f]}
     scoreboard players operation @s ForwardTargetMobUUID = @e[type=slime,tag=CO.EntityRoot,limit=1] MobUUID
     tag @s add Enemy
     tag @s add Enemy.Boss
