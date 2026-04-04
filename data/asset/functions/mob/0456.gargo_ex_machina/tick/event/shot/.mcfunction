@@ -23,7 +23,7 @@
         execute if score @s CO.EventTimer matches 1..30 run function asset:mob/0456.gargo_ex_machina/tick/util/rotate_to_target
     # 攻撃
         # 攻撃位置決定
-            execute if score @s CO.EventTimer matches 30 at @p[tag=CO.MainTarget,distance=..80] run summon area_effect_cloud ~ ~ ~ {Tags:["CO.Aec.AttackPosition"],Duration:80}
+            execute if score @s CO.EventTimer matches 30 at @p[tag=CO.MainTarget,distance=..80] run summon area_effect_cloud ~ ~ ~ {Tags:["CO.Aec.AttackPosition"],Duration:50}
             execute if score @s CO.EventTimer matches 30 as @e[type=area_effect_cloud,tag=CO.Aec.AttackPosition,distance=..80,limit=1] at @s run function asset:mob/0456.gargo_ex_machina/tick/util/move_to_ground
         # 予兆
             execute if score @s CO.EventTimer matches 30 at @e[type=area_effect_cloud,tag=CO.Aec.AttackPosition,distance=..80,limit=1] run function asset:mob/0456.gargo_ex_machina/tick/event/shot/prediction.m {Tick:42}
@@ -48,6 +48,9 @@
             execute if score @s CO.EventTimer matches 72..74 run playsound entity.breeze.jump hostile @a ~ ~ ~ 2 0.5
             execute if score @s CO.EventTimer matches 72..74 run playsound entity.breeze.jump hostile @a ~ ~ ~ 2 0.6
             execute if score @s CO.EventTimer matches 72 at @e[type=area_effect_cloud,tag=CO.Aec.AttackPosition,distance=..80,limit=1] run function asset:mob/0456.gargo_ex_machina/tick/event/shot/attack
+
+# 継続
+    execute if score @s CO.EventTimer matches 80 if score @s CO.PreTimer matches 2.. run function asset:mob/0456.gargo_ex_machina/tick/event/shot/continue
     
 # 終了
     execute if score @s CO.EventTimer matches 126.. run function asset:mob/0456.gargo_ex_machina/tick/event/shot/end
