@@ -7,10 +7,11 @@
 # 状態
     #declare tag UV5.InAction 行動中
     #declare tag UV5.HealthLess50Per HP50%以下
-    #declare tag UV5.Latter 後半戦
+    #declare tag UV5.IsLatter 後半戦
 
 # スキル
-    #declare tag UV5.Skill.GiantWool 巨大羊毛攻撃
+    #declare tag UV5.Skill.GiantWool.Horizontal 巨大羊毛攻撃・水平タイプ
+    #declare tag UV5.Skill.GiantWool.Melting 巨大羊毛攻撃・融解タイプ
     #declare tag UV5.Skill.Jump ジャンプ攻撃
 
 # その他
