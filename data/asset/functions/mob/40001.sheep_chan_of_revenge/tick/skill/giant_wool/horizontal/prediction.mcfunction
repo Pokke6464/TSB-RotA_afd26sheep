@@ -1,6 +1,6 @@
 #> asset:mob/40001.sheep_chan_of_revenge/tick/skill/giant_wool/horizontal/prediction
 #
-#
+# 巨大羊毛攻撃・水平タイプ
 #
 # @within function asset:mob/40001.sheep_chan_of_revenge/tick/skill/giant_wool/horizontal/tick
 

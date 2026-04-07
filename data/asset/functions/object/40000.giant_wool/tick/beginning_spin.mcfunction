@@ -25,6 +25,9 @@
     execute if entity @s[scores={General.Object.Tick=70}] run data modify entity @s interpolation_duration set value 3
     execute if entity @s[scores={General.Object.Tick=73}] run function asset:object/40000.giant_wool/tick/set_spin
 
+# IsQuickAttackがtrueなら高速回転までの時間を短縮
+    scoreboard players set @s[tag=40000.IsQuickAttack,scores={General.Object.Tick=17}] General.Object.Tick 51
+
 # スコアが一定値(73)まで行ったなら高速回転Tagを付与
     execute if entity @s[scores={General.Object.Tick=73}] run tag @s add 40000.HighSpeedSpinning
     execute if entity @s[scores={General.Object.Tick=73}] run data modify storage asset:context this.MovePerStep set value 1

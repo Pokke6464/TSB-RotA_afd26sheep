@@ -6,6 +6,8 @@
 
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
+    # 高速回転中かつ浮いているなら更にTickを加算し早めに消えるようにする
+        execute if entity @s[tag=40000.HighSpeedSpinning] if block ~ ~-1.7 ~ #lib:no_collision_without_fluid run scoreboard players add @s General.Object.Tick 1
 
 # 回転が加速しきるまで
     execute if entity @s[scores={General.Object.Tick=..73}] run function asset:object/40000.giant_wool/tick/beginning_spin
@@ -13,7 +15,7 @@
 # 高速回転
     execute if entity @s[tag=40000.HighSpeedSpinning] run function asset:object/40000.giant_wool/tick/high_speed_spin
 
-# 灰色なら高速回転状態の時、前方の敵に誘導させる
+# 灰色なら高速回転状態の時、前方のプレイヤーへ誘導させる
     execute if entity @s[tag=40000.HighSpeedSpinning,tag=40000.IsGray] positioned ^ ^ ^15 run tag @p[tag=!PlayerShouldInvulnerable,distance=..15] add Targetable
     execute if entity @s[tag=40000.HighSpeedSpinning,tag=40000.IsGray] facing entity @p[tag=Targetable,distance=..30] feet positioned ^ ^ ^-150 rotated as @s positioned ^ ^ ^-800 facing entity @s feet positioned as @s run tp @s ~ ~ ~ ~ 0
     execute if entity @s[tag=40000.HighSpeedSpinning,tag=40000.IsGray] run tag @a[tag=Targetable,distance=..30] remove Targetable
@@ -30,4 +32,4 @@
     tag @a[tag=DXYZ,distance=..10] remove DXYZ
 
 # 消滅処理
-    kill @s[scores={General.Object.Tick=800..}]
+    execute if entity @s[scores={General.Object.Tick=150..}] run function asset:object/40000.giant_wool/kill/
