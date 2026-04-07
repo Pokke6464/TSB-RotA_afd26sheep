@@ -8,6 +8,7 @@
     function asset:mob/super.death
 
 # 演出
+    playsound entity.sheep.death hostile @a ~ ~ ~ 3 1
 
 # 中心点削除
     kill @e[type=marker,tag=UV5.Marker.SpawnPoint,sort=nearest,limit=1]
@@ -18,8 +19,6 @@
 # モデル削除
     function animated_java:sheep_avenger/remove/all
 
-return 0
-# ボスドロ
-    data modify storage api: Argument.ID set value 1084
-    data modify storage api: Argument.Important set value true
-    function api:artifact/spawn/from_id
+# 死亡演出召喚
+    data modify storage api: Argument.ID set value 40002
+    execute positioned ~ ~0.25 ~ run function api:object/summon
