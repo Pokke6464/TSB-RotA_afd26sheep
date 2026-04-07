@@ -7,8 +7,8 @@
 # スコア加算
     scoreboard players add @s General.Mob.Tick 1
 
-# 
-    execute at @s rotated ~ 0 run tp @e[type=item_display,tag=2264.Model,distance=..80,sort=nearest,limit=1] ~ ~ ~ ~ ~
+# モデルを自身に合わせる
+    execute at @s rotated ~ 0 run tp @e[type=item_display,tag=2264.Model,distance=..256,sort=nearest,limit=1] ~ ~ ~ ~ ~
 
 # オーラ
     execute if score @s General.Mob.Tick matches -7.. run particle trial_spawner_detection ~ ~1.5 ~ 1.25 1.5 1.25 0 3 force @a[distance=..32]
