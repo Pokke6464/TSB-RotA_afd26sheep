@@ -12,7 +12,7 @@
     playsound entity.generic.explode hostile @a ~ ~ ~ 2 0.8
     particle large_smoke ~ ~ ~ 3 0 3 0.5 50 force @a[distance=..64]
     particle explosion ~ ~ ~ 4 4 4 0 50 force @a[distance=..64]
-    execute if block ~ ~-0.2 ~ #lib:no_collision rotated ~ 0 run particle block_marker white_wool ^ ^-0.5 ^-0.5 1 0 1 0 20 force @a[distance=..64]
+    execute if block ~ ~-0.25 ~ #lib:no_collision rotated ~ 0 run particle block_marker white_wool ^ ^-0.5 ^0.5 1 0 1 0 20 force @a[distance=..64]
 
 # 攻撃
     data modify storage api: Argument.Damage set from storage asset:context this.Damage.Jump

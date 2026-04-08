@@ -15,8 +15,8 @@
     data modify storage api: Argument.FieldOverride.Tick set value 30
     execute if entity @s[tag=!UV5.IsLatter] run data modify storage api: Argument.FieldOverride.Scale set value [6f,28f]
     execute if entity @s[tag=UV5.IsLatter] run data modify storage api: Argument.FieldOverride.Scale set value [6f,36f]
-    execute if entity @s[tag=!UV5.IsLatter] at @s positioned ^3 ^0.1 ^-14 run function api:object/summon
-    execute if entity @s[tag=UV5.IsLatter] at @s positioned ^3 ^0.1 ^-18 run function api:object/summon
+    execute if entity @s[tag=!UV5.IsLatter] at @s positioned ^4 ^0.1 ^-14 run function api:object/summon
+    execute if entity @s[tag=UV5.IsLatter] at @s positioned ^4 ^0.1 ^-18 run function api:object/summon
 
 # 向きを戻す
     tp @s ~ ~ ~ ~ ~
