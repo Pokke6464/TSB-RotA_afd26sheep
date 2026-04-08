@@ -37,8 +37,8 @@
     # 接触
         data modify storage asset:mob Field.Damage.Contact set value 40.0f
     # 巨大羊毛
-        data modify storage asset:mob Field.Damage.GiantWool set value {Beginning:20f,Clash:90f}
+        data modify storage asset:mob Field.Damage.GiantWool set value {Beginning:20.0f,Clash:90.0f}
     # ジャンプ
-        data modify storage asset:mob Field.Damage.Jump set value 100f
+        data modify storage asset:mob Field.Damage.Jump set value 100.0f
     # ジャンプの衝撃波
-        data modify storage asset:mob Field.Damage.JumpShockWave set value 65f
+        data modify storage asset:mob Field.Damage.JumpShockWave set value 65.0f

@@ -61,6 +61,6 @@
         data modify storage asset:mob Field.Damage.PanjanDrone set value {Amount:90.0,Type:"Physical",Element:"None"}
         data modify storage asset:mob Field.Damage.PanjanDrone.Flame set value {Amount:40.0,Type:"Magic",Element:"Fire"}
     # 円形衝撃波
-        data modify storage asset:mob Field.Damage.RingShockWave set value 65f
+        data modify storage asset:mob Field.Damage.RingShockWave set value 65.0f
     # プレイヤー残機制
         data modify storage asset:mob Field.RemoveLifeWhenPlayerDie set value true
