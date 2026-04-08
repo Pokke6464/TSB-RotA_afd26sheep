@@ -1,10 +1,10 @@
-#> asset:object/40000.giant_wool/tick/set_spin
+#> asset:object/40000.scor_giant_wool/tick/set_spin
 #
 # 回転をセットする
 #
 # @within function
-#   asset:object/40000.giant_wool/tick/beginning_spin
-#   asset:object/40000.giant_wool/tick/high_speed_spin
+#   asset:object/40000.scor_giant_wool/tick/beginning_spin
+#   asset:object/40000.scor_giant_wool/tick/high_speed_spin
 
 # スコアを加算
     scoreboard players add @s 40000.SpinCount 1

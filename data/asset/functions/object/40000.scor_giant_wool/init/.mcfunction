@@ -1,4 +1,4 @@
-#> asset:object/40000.giant_wool/init/
+#> asset:object/40000.scor_giant_wool/init/
 #
 # Objectのinit時の処理
 #

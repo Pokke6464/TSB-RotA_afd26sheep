@@ -1,29 +1,29 @@
-#> asset:object/40000.giant_wool/tick/beginning_spin
+#> asset:object/40000.scor_giant_wool/tick/beginning_spin
 #
 #
 #
-# @within function asset:object/40000.giant_wool/tick/
+# @within function asset:object/40000.scor_giant_wool/tick/
 
 # 徐々に加速する縦回転をする
     execute if entity @s[scores={General.Object.Tick=3}] run data modify entity @s interpolation_duration set value 15
-    execute if entity @s[scores={General.Object.Tick=3}] run function asset:object/40000.giant_wool/tick/set_spin
+    execute if entity @s[scores={General.Object.Tick=3}] run function asset:object/40000.scor_giant_wool/tick/set_spin
     execute if entity @s[scores={General.Object.Tick=18}] run data modify entity @s interpolation_duration set value 8
-    execute if entity @s[scores={General.Object.Tick=18}] run function asset:object/40000.giant_wool/tick/set_spin
-    execute if entity @s[scores={General.Object.Tick=26}] run function asset:object/40000.giant_wool/tick/set_spin
+    execute if entity @s[scores={General.Object.Tick=18}] run function asset:object/40000.scor_giant_wool/tick/set_spin
+    execute if entity @s[scores={General.Object.Tick=26}] run function asset:object/40000.scor_giant_wool/tick/set_spin
     execute if entity @s[scores={General.Object.Tick=26}] run data modify entity @s interpolation_duration set value 7
-    execute if entity @s[scores={General.Object.Tick=33}] run function asset:object/40000.giant_wool/tick/set_spin
-    execute if entity @s[scores={General.Object.Tick=40}] run function asset:object/40000.giant_wool/tick/set_spin
+    execute if entity @s[scores={General.Object.Tick=33}] run function asset:object/40000.scor_giant_wool/tick/set_spin
+    execute if entity @s[scores={General.Object.Tick=40}] run function asset:object/40000.scor_giant_wool/tick/set_spin
     execute if entity @s[scores={General.Object.Tick=40}] run data modify entity @s interpolation_duration set value 6
-    execute if entity @s[scores={General.Object.Tick=46}] run function asset:object/40000.giant_wool/tick/set_spin
-    execute if entity @s[scores={General.Object.Tick=52}] run function asset:object/40000.giant_wool/tick/set_spin
+    execute if entity @s[scores={General.Object.Tick=46}] run function asset:object/40000.scor_giant_wool/tick/set_spin
+    execute if entity @s[scores={General.Object.Tick=52}] run function asset:object/40000.scor_giant_wool/tick/set_spin
     execute if entity @s[scores={General.Object.Tick=52}] run data modify entity @s interpolation_duration set value 5
-    execute if entity @s[scores={General.Object.Tick=57}] run function asset:object/40000.giant_wool/tick/set_spin
-    execute if entity @s[scores={General.Object.Tick=62}] run function asset:object/40000.giant_wool/tick/set_spin
+    execute if entity @s[scores={General.Object.Tick=57}] run function asset:object/40000.scor_giant_wool/tick/set_spin
+    execute if entity @s[scores={General.Object.Tick=62}] run function asset:object/40000.scor_giant_wool/tick/set_spin
     execute if entity @s[scores={General.Object.Tick=62}] run data modify entity @s interpolation_duration set value 4
-    execute if entity @s[scores={General.Object.Tick=66}] run function asset:object/40000.giant_wool/tick/set_spin
-    execute if entity @s[scores={General.Object.Tick=70}] run function asset:object/40000.giant_wool/tick/set_spin
+    execute if entity @s[scores={General.Object.Tick=66}] run function asset:object/40000.scor_giant_wool/tick/set_spin
+    execute if entity @s[scores={General.Object.Tick=70}] run function asset:object/40000.scor_giant_wool/tick/set_spin
     execute if entity @s[scores={General.Object.Tick=70}] run data modify entity @s interpolation_duration set value 3
-    execute if entity @s[scores={General.Object.Tick=73}] run function asset:object/40000.giant_wool/tick/set_spin
+    execute if entity @s[scores={General.Object.Tick=73}] run function asset:object/40000.scor_giant_wool/tick/set_spin
 
 # IsQuickAttackがtrueなら高速回転までの時間を短縮
     scoreboard players set @s[tag=40000.IsQuickAttack,scores={General.Object.Tick=17}] General.Object.Tick 51

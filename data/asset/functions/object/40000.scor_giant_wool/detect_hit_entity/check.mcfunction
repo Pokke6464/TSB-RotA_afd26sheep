@@ -1,8 +1,8 @@
-#> asset:object/40000.giant_wool/detect_hit_entity/check
+#> asset:object/40000.scor_giant_wool/detect_hit_entity/check
 #
 # プレイヤーが周囲にいるかチェック
 #
-# @within function asset:object/40000.giant_wool/detect_hit_entity/
+# @within function asset:object/40000.scor_giant_wool/detect_hit_entity/
 
 # 回転するxyzLibを使ってヒット判定を行う
     data modify storage lib: args.dx set value 1.8

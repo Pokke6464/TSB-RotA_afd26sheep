@@ -5,4 +5,4 @@
 # @within asset_manager:object/init/init.m
 
 # 元のInit処理を呼び出す
-    function asset:object/40000.giant_wool/init/
+    function asset:object/40000.scor_giant_wool/init/

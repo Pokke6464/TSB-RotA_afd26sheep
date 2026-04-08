@@ -1,4 +1,4 @@
-#> asset:object/40000.giant_wool/register
+#> asset:object/40000.scor_giant_wool/register
 #
 # Objectのデータを指定
 #

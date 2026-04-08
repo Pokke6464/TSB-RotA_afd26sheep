@@ -1,4 +1,4 @@
-#> asset:object/40000.giant_wool/summon/debug
+#> asset:object/40000.scor_giant_wool/summon/debug
 #
 # 動作チェック用の召喚処理 使い終わったら消してもいいかも
 #

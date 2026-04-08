@@ -1,8 +1,8 @@
-#> asset:object/40000.giant_wool/hit_entity/beginning_hit
+#> asset:object/40000.scor_giant_wool/hit_entity/beginning_hit
 #
 # 回転し始めのヒット判定
 #
-# @within function asset:object/40000.giant_wool/hit_entity/
+# @within function asset:object/40000.scor_giant_wool/hit_entity/
 
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage.Beginning

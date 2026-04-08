@@ -1,8 +1,8 @@
-#> asset:object/40000.giant_wool/detect_hit_block/check
+#> asset:object/40000.scor_giant_wool/detect_hit_block/check
 #
 # ブロックとの接触判定
 #
-# @within function asset:object/40000.giant_wool/detect_hit_block/
+# @within function asset:object/40000.scor_giant_wool/detect_hit_block/
 
 # 前方の縦3*横3をチェック
     execute positioned ^ ^ ^1 unless block ~ ~ ~ #lib:no_collision run data modify storage asset:context IsHitBlock set value true

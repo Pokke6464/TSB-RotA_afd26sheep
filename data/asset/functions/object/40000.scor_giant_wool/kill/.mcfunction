@@ -1,4 +1,4 @@
-#> asset:object/40000.giant_wool/kill/
+#> asset:object/40000.scor_giant_wool/kill/
 #
 # 継承先などから実行される処理
 #
