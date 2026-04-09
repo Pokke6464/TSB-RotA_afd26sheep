@@ -13,3 +13,4 @@
 
 # スコアリセット
     scoreboard players reset @s General.Mob.Tick
+    scoreboard players reset @s UV5.LoopCount

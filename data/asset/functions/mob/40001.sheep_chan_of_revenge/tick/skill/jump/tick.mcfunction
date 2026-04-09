@@ -26,5 +26,8 @@
     execute if score @s General.Mob.Tick matches 63 run function asset:mob/40001.sheep_chan_of_revenge/tick/util/jump
     execute if score @s General.Mob.Tick matches 70 run function asset:mob/40001.sheep_chan_of_revenge/tick/skill/jump/attack
 
+# ループ回数が設定されているならループ
+    execute if score @s General.Mob.Tick matches 85.. if score @s UV5.LoopCount matches 2.. run function asset:mob/40001.sheep_chan_of_revenge/tick/skill/jump/loop
+
 # リセット
     execute if score @s General.Mob.Tick matches 95.. run function asset:mob/40001.sheep_chan_of_revenge/tick/reset
