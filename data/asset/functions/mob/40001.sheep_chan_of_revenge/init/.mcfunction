@@ -21,5 +21,13 @@
     function animated_java:sheep_avenger/summon {args: {animation: 'transform'}}
     execute as @e[type=item_display,tag=2264.Model,distance=..10,limit=1] run data merge entity @s {view_range:16f,width:0f,height:0f,teleport_duration:2}
 
+# 無敵化
+    function asset:mob/40001.sheep_chan_of_revenge/tick/util/start_invulnerable
+
+# 最大HPをスコアに代入(DPS計算用)
+    function api:mob/get_max_health
+    execute store result score @s UV5.MaxHealth run data get storage api: Return.MaxHealth 1
+    data remove storage api: Return
+
 # 終了
     tag @s add UV5.EndInit
