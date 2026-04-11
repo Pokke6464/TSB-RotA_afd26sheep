@@ -1,8 +1,8 @@
-#> asset:mob/40001.sheep_chan_of_revenge/tick/skill/giant_wool/melting/attack
+#> asset:mob/40001.sheep_chan_of_revenge/tick/skill/giant_wool/melt/attack
 #
 # 巨大羊毛攻撃・融解タイプ
 #
-# @within function asset:mob/40001.sheep_chan_of_revenge/tick/skill/giant_wool/melting/tick
+# @within function asset:mob/40001.sheep_chan_of_revenge/tick/skill/giant_wool/melt/tick
 
 # 笑う
     function asset:mob/40001.sheep_chan_of_revenge/tick/util/laugh

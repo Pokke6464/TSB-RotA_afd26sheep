@@ -1,8 +1,8 @@
-#> asset:mob/40001.sheep_chan_of_revenge/tick/skill/giant_wool/melting/prediction.m
+#> asset:mob/40001.sheep_chan_of_revenge/tick/skill/giant_wool/melt/prediction.m
 #
 # 巨大羊毛攻撃・融解タイプ
 #
-# @within function asset:mob/40001.sheep_chan_of_revenge/tick/skill/giant_wool/melting/tick
+# @within function asset:mob/40001.sheep_chan_of_revenge/tick/skill/giant_wool/melt/tick
 
 # 拡散
     $data modify storage lib: Argument.Bounds set value [[$(Bounds),$(Bounds)],[0,0],[$(Bounds),$(Bounds)]]
