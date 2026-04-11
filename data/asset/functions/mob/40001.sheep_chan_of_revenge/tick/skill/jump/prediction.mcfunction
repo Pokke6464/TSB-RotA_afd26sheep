@@ -26,8 +26,8 @@
     data modify storage api: Argument.ID set value 2063
     execute at @s positioned ~ ~ ~ run function api:object/summon
 
-# 再度上空に移動
-    execute at @s run tp @s ~ ~150 ~
+# 再度上空に移動(ターゲットが存在しない場合はやらない)
+    execute if entity @p[tag=Target] at @s run tp @s ~ ~150 ~
 
 # Targetタグ消去
     tag @p[tag=Target] remove Target
