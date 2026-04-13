@@ -8,7 +8,7 @@
     $tag @a[scores={UserID=$(TargetPlayerId)}] add 2260.TargetPlayer
 
 # 対象の方を向く
-    execute rotated ~ 0 positioned ^ ^ ^-1 facing entity @p[tag=2260.TargetPlayer] feet rotated ~ 0 positioned ^ ^ ^-1 facing entity @s feet positioned as @s positioned ^ ^ ^-1 rotated as @s rotated ~ 0 positioned ^ ^ ^-1 facing entity @s feet positioned as @s run tp @s ^ ^ ^ ~ 0
+    execute rotated ~ 0 positioned ^ ^ ^-1 facing entity @p[tag=2260.TargetPlayer] feet rotated ~ 0 positioned ^ ^ ^-1 facing entity @s feet positioned as @s positioned ^ ^ ^-1 rotated as @s rotated ~ 0 positioned ^ ^ ^-0.25 facing entity @s feet positioned as @s run tp @s ^ ^ ^ ~ 0
 
 # 終了
     tag @a[tag=2260.TargetPlayer] remove 2260.TargetPlayer

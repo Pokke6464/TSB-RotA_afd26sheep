@@ -12,7 +12,7 @@
 # super.death
     function asset:mob/super.death
 
-# 演出
+# 音
     playsound entity.sheep.death hostile @a ~ ~ ~ 3 1
 
 # 中心点削除

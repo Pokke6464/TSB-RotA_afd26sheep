@@ -1,13 +1,15 @@
-#> asset:object/2262.gem_panjan_drone/tick/summon_target_line
+#> asset:object/2260.gem_attack_drone/tick/summon_target_line.m
 #
 # Objectのtick時の処理
 #
-# @within asset:object/2262.gem_panjan_drone/tick/event_idle
+# @within function 
+#   asset:object/2260.gem_attack_drone/tick/event_idle
+#   asset:object/2260.gem_attack_drone/tick/event_attack
 
 # ターゲット線召喚
     data modify storage api: Argument.ID set value 2272
     data modify storage api: Argument.FieldOverride.TargetPlayerId set from storage asset:context this.TargetPlayerId
     data modify storage api: Argument.FieldOverride.Tick set value 400
-    data modify storage api: Argument.FieldOverride.Color set value 16758123
+    $data modify storage api: Argument.FieldOverride.Color set value $(Color)
     data modify storage api: Argument.FieldOverride.ObjectId set from storage asset:context this.ObjectId
     execute positioned ~ ~3 ~ run function api:object/summon

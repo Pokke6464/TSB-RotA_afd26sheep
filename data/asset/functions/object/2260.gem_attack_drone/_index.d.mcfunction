@@ -13,6 +13,8 @@
     #declare tag 2260.Phase.Attack
     #declare tag 2260.Phase.Start
     #declare tag 2260.IsTarget
+    #declare tag 2260.IsAdditionalAttack
+    #declare tag 2260.AdditionalAttackInProgress
     #declare tag 2260.TargetPlayer
     #declare function animated_java:gem_attack_drone/summon
     #declare function animated_java:gem_attack_drone/animations/summon/tween

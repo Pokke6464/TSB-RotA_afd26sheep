@@ -1,4 +1,4 @@
-#> asset:object/2260.gem_attack_drone/tick/prediction
+#> asset:object/2260.gem_attack_drone/tick/prediction.m
 #
 # Objectのtick時の処理
 #
@@ -8,7 +8,7 @@
     data modify storage api: Argument.ID set value 2113
     data modify storage api: Argument.FieldOverride.RotationX set from entity @s Rotation[0]
     data modify storage api: Argument.FieldOverride.Color set value 3381759
-    data modify storage api: Argument.FieldOverride.Scale set value [8f,80f]
+    $data modify storage api: Argument.FieldOverride.Scale set value [8f,$(Length)f]
     data modify storage api: Argument.FieldOverride.Interpolation set value 10
-    data modify storage api: Argument.FieldOverride.Tick set value 50
+    $data modify storage api: Argument.FieldOverride.Tick set value $(Tick)
     execute positioned ^ ^-0.4 ^ rotated ~ 0 run function api:object/summon

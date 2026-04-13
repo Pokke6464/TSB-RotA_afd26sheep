@@ -1,4 +1,7 @@
 #> asset:mob/40001.sheep_chan_of_revenge/init/
+#
+# Mobのinit時の処理
+#
 # @within asset:mob/alias/40001/init
 
 # AJロード

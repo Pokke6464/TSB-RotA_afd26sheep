@@ -1,4 +1,7 @@
 #> asset:mob/40001.sheep_chan_of_revenge/register
+#
+# Mobのデータを指定
+#
 # @within asset:mob/alias/40001/register
 
 # 継承 (int) (オプション)
