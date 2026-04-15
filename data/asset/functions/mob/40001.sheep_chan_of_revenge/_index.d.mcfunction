@@ -12,7 +12,9 @@
 # スキル
     #declare tag UV5.Skill.GiantWool.Horizontal 巨大羊毛攻撃・水平タイプ
     #declare tag UV5.Skill.GiantWool.Melting 巨大羊毛攻撃・融解タイプ
+    #declare tag UV5.Skill.GiantWool.Spread 巨大羊毛攻撃・拡散タイプ
     #declare tag UV5.Skill.Jump ジャンプ攻撃
+    #declare tag UV5.Skill.CallServants 眷属召喚
 
 # その他
     #declare tag UV5.Marker.SpawnPoint 召喚位置保存用のマーカー

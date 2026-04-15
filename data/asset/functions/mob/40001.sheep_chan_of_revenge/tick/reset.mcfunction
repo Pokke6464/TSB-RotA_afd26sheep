@@ -8,6 +8,7 @@
     tag @s remove UV5.Skill.GiantWool.Horizontal
     tag @s remove UV5.Skill.GiantWool.Melting
     tag @s remove UV5.Skill.Jump
+    tag @s remove UV5.Skill.CallServants
 
     tag @s remove UV5.InAction
 

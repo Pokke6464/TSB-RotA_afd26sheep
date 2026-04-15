@@ -9,3 +9,6 @@
 
 # 音
     execute if entity @s run playsound entity.player.hurt hostile @a ~ ~ ~ 1 1
+
+# フェーズ移行
+    execute if entity @s[tag=!UV5.HealthLess50Per] run function asset:mob/40001.sheep_chan_of_revenge/hurt/change_phase
