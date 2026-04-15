@@ -11,6 +11,10 @@
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
 
+# 拡大
+    execute if entity @s[scores={General.Object.Tick=4}] run data modify entity @s start_interpolation set value 0
+    execute if entity @s[scores={General.Object.Tick=4}] run data modify entity @s transformation.scale set from storage asset:context this.Scale
+
 # 一定間隔で回転
     scoreboard players operation $Interval Temporary = @s General.Object.Tick
     scoreboard players add $Interval Temporary 15

@@ -7,7 +7,7 @@
 # 演出
     execute if entity @s[tag=!40000.IsGray] unless block ~ ~-1.7 ~ #lib:no_collision run particle block white_wool ~ ~-1 ~ 0.8 0 0.8 0 10 force @a[distance=..64]
     execute if entity @s[tag=40000.IsGray] unless block ~ ~-1.7 ~ #lib:no_collision run particle block gray_wool ~ ~-1 ~ 0.8 0 0.8 0 10 force @a[distance=..64]
-    playsound entity.breeze.shoot hostile @a ~ ~ ~ 0.25 2
+    playsound block.wool.break hostile @a ~ ~ ~ 1 0.75
 
 # 一定間隔で実行
     scoreboard players operation $Interval Temporary = @s General.Object.Tick
