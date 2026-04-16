@@ -4,7 +4,6 @@
 #
 # @within asset:object/2265.field_modify_manager/tick/attack
 # @private
-    #declare tag 2266.ColorChanged
     #declare objective 2266.Color
 
 # 既に色が変わっていないエリアを色変え

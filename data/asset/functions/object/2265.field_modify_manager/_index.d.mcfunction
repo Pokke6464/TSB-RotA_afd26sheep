@@ -13,3 +13,4 @@
     #declare tag 2265.Aec.Yellow
     #declare tag 2265.Hit
     #declare tag 2266.Remove
+    #declare tag 2266.ColorChanged 色変化済み(RotA)

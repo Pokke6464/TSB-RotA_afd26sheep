@@ -4,7 +4,6 @@
 #
 # @within asset:object/2265.field_modify_manager/tick/change_color
 # @private
-    #declare tag 2266.ColorChanged
     #declare objective 2266.Color
 
 # 変更を適用

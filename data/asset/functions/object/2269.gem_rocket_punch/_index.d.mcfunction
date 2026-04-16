@@ -4,3 +4,4 @@
 #> tag
 # @within function asset:object/2269.gem_rocket_punch/**
     #declare tag 2269.Attack
+    #declare tag 2269.IsAdditionalAttack 追撃の有無(RotA)

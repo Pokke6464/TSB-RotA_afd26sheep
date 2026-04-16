@@ -13,9 +13,9 @@
     #declare tag 2260.Phase.Attack
     #declare tag 2260.Phase.Start
     #declare tag 2260.IsTarget
-    #declare tag 2260.IsAdditionalAttack
-    #declare tag 2260.AdditionalAttackInProgress
     #declare tag 2260.TargetPlayer
+    #declare tag 2260.IsAdditionalAttack 追撃の有無(RotA)
+    #declare tag 2260.AdditionalAttackInProgress 追撃中(RotA)
     #declare function animated_java:gem_attack_drone/summon
     #declare function animated_java:gem_attack_drone/animations/summon/tween
     #declare function animated_java:gem_attack_drone/animations/idle/tween
